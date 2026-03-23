@@ -1,0 +1,1 @@
+{\n  "name": "todo-list",\n  "version": "1.0.0",\n  "description": "A simple to-do list application with local storage capabilities.",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js"\n  },\n  "keywords": ["todo", "local storage", "app"],\n  "author": "mndebelecollen074-netizen",\n  "license": "MIT"\n}
