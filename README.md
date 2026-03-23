@@ -1,4 +1,58 @@
-# Trading-bot-const express = require("express");
+C:\Users\YourName\Desktop\Trading-Bot# Start bot
+curl -X POST http://localhost:3000/start
+
+# Check status
+curl http://localhost:3000/status
+
+# View history
+curl http://localhost:3000/historyPOST http://localhost:3000/stopGET http://localhost:3000/statusPOST http://localhost:3000/startnpm startAPI_KEY=your_actual_api_key_here
+SECRET_KEY=your_actual_secret_key_herenpm installgit clone https://github.com/mndebelecollen074-netizen/Trading-bot-.git
+cd Trading-bot-npm install
+npm startconst assert = require('assert');
+
+const { analyze, calculateQuantity, detectMarket, tradeManagement } = require('./tradingBot');
+
+describe('Trading Bot Functions', () => {
+  describe('analyze', () => {
+    it('should return the correct analysis for given market data', () => {
+      // Example market data
+      const data = { price: 100, volume: 2000 };
+      const result = analyze(data);
+      assert.strictEqual(result, 'expectedAnalysis'); // Replace with expected value
+    });
+  });
+
+  describe('calculateQuantity', () => {
+    it('should calculate the correct quantity based on risk', () => {
+      const risk = 100;
+      const balance = 1000;
+      const quantity = calculateQuantity(risk, balance);
+      assert.strictEqual(quantity, 10); // Replace with expected value
+    });
+  });
+
+  describe('detectMarket', () => {
+    it('should identify the correct market trend', () => {
+      const marketData = [/* Sample market data */];
+      const trend = detectMarket(marketData);
+      assert.strictEqual(trend, 'bullish'); // Replace with expected value
+    });
+  });
+
+  describe('tradeManagement', () => {
+    it('should execute the trade management logic correctly', () => {
+      const trade = { /* trade details */ };
+      const result = tradeManagement(trade);
+      assert.strictEqual(result.success, true); // Replace with expected condition
+    });
+  });
+});
+curl -X POST http://localhost:3000/stopcurl -X POST http://localhost:3000/startcurl http://localhost:3000/statusnpm test# Install dependencies
+npm install
+
+# Start the bot
+npm startAPI_KEY=your_binance_api_key
+SECRET_KEY=your_binance_secret_keynpm run dev# Trading-bot-const express = require("express");
 const axios = require("axios");
 const crypto = require("crypto");
 const { RSI, EMA } = require("technicalindicators");
